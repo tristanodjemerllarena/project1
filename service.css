@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: cadetblue;
+	color: #fff;
+}
+.service{
+	padding: 100px 0;
+	font-family: poppins, sans-serif;
+
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 45px;
+	margin: auto;
+}
+.max-width h1{
+	text-align: center;
+	position: relative;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+
+}
+.max-width h1::after{
+	content: '';
+	position: absolute;
+	width: 170px;
+	height: 3px;
+	background: #fff;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card{
+	padding: 50px 25px;
+	width: calc(26% - 20px);
+	border-radius: 6px;
+	background: #222;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.card:hover{
+	background-color: cadetblue;
+}
+
+.box{
+	transition: all 0.3s ease;
+}
+.card:hover .box{
+	transform: scale( 1.05);
+}
+.box i{
+	font-size: 50px;
+	color: red;
+	transition: color 0.3s ease;
+}
+.card:hover .box i{
+	color: white;
+}
+.box h3{
+	font-size: 25 px;
+	padding: 10px 0 7px;
+	color: white;
+}
+@media screen and ( max-width: 700px) {
+.card{
+	
+	margin-bottom: 100% ;
+}
+
+
+
+
+}
